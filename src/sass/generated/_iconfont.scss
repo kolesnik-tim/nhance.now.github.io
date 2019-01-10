@@ -9,8 +9,9 @@
   font-style: normal;
 }
 
-$icon-arrow-right-2: "\EA01";
-$icon-check: "\EA02";
+$icon-arrow-down: "\EA01";
+$icon-arrow-right-2: "\EA02";
+$icon-check: "\EA03";
 
 
 %icon {
@@ -29,5 +30,6 @@ $icon-check: "\EA02";
   display: inline-block;
 }
 
+.icon-arrow-down:before { content: $icon-arrow-down; }
 .icon-arrow-right-2:before { content: $icon-arrow-right-2; }
 .icon-check:before { content: $icon-check; }

@@ -1,8 +1,12 @@
 .use
   background: $dark-two
   padding: 90px 0
+  +r(767)
+    padding: 50px 0
   &__title
     padding-bottom: 100px
+    +r(767)
+      padding-bottom: 40px
     h2
       font-size: 30px
       font-weight: 300
@@ -18,25 +22,36 @@
   &__row
     display: flex
     border-bottom: 1px solid rgba($pinkish-grey, 0.2)
+    +r(767)
+      flex-direction: column
+      border-bottom: none
     &:last-child
       border-bottom: none
   &__block
     display: flex
     align-items: flex-start
-    padding: 0 43px
+    padding: 35px 43px 45px
     width: 100%
     flex: 3
     border-right: 1px solid rgba($pinkish-grey, 0.2)
-    padding-bottom: 45px
-    padding-top: 35px
+    +r(1040)
+      padding: 25px 15px 35px
+    +r(767)
+      border-right: none
+      border-bottom: 1px solid rgba($pinkish-grey, 0.2)
     &:last-child
-      border: none
+      border-right: none
     &-btn
       +center
+      +r(767)
+        border-bottom: none
     &__img
       width: 50px
       +center-x
       margin-right: 25px
+      +r(1040)
+        margin-right: 15px
+        width: 40px
     &__text
       flex: 1
       strong

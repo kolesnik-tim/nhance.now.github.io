@@ -12,3 +12,15 @@ import '../lib/selectize.min.js';
 //   });
 //   return false;
 // });
+
+//footer
+$('.footer__nav__block h3').on('click', function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $(this).next('ul').slideUp();
+  } else{
+    $('.footer__nav__block h3').removeClass('active').next('ul').slideUp();
+    $(this).addClass('active');
+    $(this).next('ul').slideDown();
+  }
+});

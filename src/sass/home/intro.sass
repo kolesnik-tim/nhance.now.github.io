@@ -7,17 +7,28 @@
   &__customs
     padding-top: 70px
     padding-bottom: 150px
+    +r(767)
+      padding-bottom: 50px
   &__img
     position: relative
     img
       position: absolute
       left: -20px
-      top: 0
+      top: 50%
+      transform: translate(0, -50%)
+      width: 115%
+      +r(767)
+        position: static
+        transform: none
+        width: 100%
+        padding-bottom: 20px
   &__block
     border-radius: 10px
     box-shadow: 0 0 24.5px 0 rgba(0, 0, 0, 0.08)
     background-color: $white
     padding: 55px
+    +r(767)
+      padding: 25px
     h4
       font-size: 14px
       font-weight: 600
@@ -47,9 +58,10 @@
       color: #ed135d
       text-transform: uppercase
       margin-bottom: 15px
-      +center-y
+      display: flex
       i
         margin-right: 15px
+        padding-top: 2px
   &__trust
     padding-bottom: 20px
     h2
@@ -62,3 +74,4 @@
     &__logo
       +center
       height: 100%
+      margin-bottom: 20px

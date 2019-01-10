@@ -93,11 +93,14 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
-    .icon-arrow-right-2:before {
+    .icon-arrow-down:before {
       content: "\EA01";
     }
-    .icon-check:before {
+    .icon-arrow-right-2:before {
       content: "\EA02";
+    }
+    .icon-check:before {
+      content: "\EA03";
     }
   </style>
 </head>
@@ -112,8 +115,16 @@
   <ul class="icons-list">
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-arrow-right-2" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".icon-arrow-down" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
+      <div class="icon-container">
+        <i class="icon icon-arrow-down"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".icon-arrow-right-2" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
       <div class="icon-container">
         <i class="icon icon-arrow-right-2"></i>
       </div>
@@ -121,7 +132,7 @@
     
     <li class="icon-box">
       <input class="icon-class-name autoselect" type="text" value=".icon-check" readonly>
-      <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
       <div class="icon-container">
         <i class="icon icon-check"></i>
       </div>

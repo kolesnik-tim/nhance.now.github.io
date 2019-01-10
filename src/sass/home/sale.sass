@@ -1,7 +1,11 @@
 .sale
   padding: 115px 0
   background: rgb(245, 245, 245)
+  +r(767)
+    padding: 50px 0
   &__offer
+    +r(767)
+      padding-bottom: 50px
     &__img
       +center
       width: 100%
@@ -25,12 +29,13 @@
         line-height: 1.43
         color: #ed135d
         margin-bottom: 15px
-        +center-y
+        display: flex
         text-transform: uppercase
         max-width: 390px
         width: 100%
         i
           margin-right: 15px
+          padding-top: 2px
       span
         font-size: 14px
         font-weight: normal
@@ -38,6 +43,9 @@
         text-align: center
         color: $dark-three
         display: block
+        +r(767)
+          br
+            display: none
         b
           font-weight: bold
   &__form
@@ -51,12 +59,18 @@
     left: 100%
     position: relative
     transform: translate(-100%)
+    +r(1040)
+      padding: 30px
+    +r(767)
+      max-width: 100%
     h2
       font-size: 27px
       font-weight: normal
       line-height: 1.48
       color: $dark-two
       margin-bottom: 40px
+      +r(767)
+        font-size: 25px
       b
         font-weight: bold
       strong
@@ -97,3 +111,4 @@
     input[type="submit"]
       padding: 10px 26px
       font-size: 12px
+      +tr
