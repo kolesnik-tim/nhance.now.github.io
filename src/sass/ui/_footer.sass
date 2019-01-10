@@ -1,0 +1,118 @@
+.footer
+  background-color: $dark-three
+  padding: 105px 0 40px
+  +r(767)
+    padding: 0px 0 50px
+  &__logo
+    +center-y
+    padding: 25px 0
+    position: relative
+    +r(767)
+      justify-content: center
+    img
+      height: 50px
+      margin-right: 20px
+    p
+      font-size: 14px
+      line-height: 1.43
+      color: $white
+      span
+        font-size: 12px
+        color: $pinkish-grey
+        display: block
+  &__contacts
+    padding: 25px 0 30px
+    p
+      font-size: 14px
+      line-height: 1.43
+      color: $pinkish-grey
+  &__social
+    display: flex
+    margin-top: 40px
+    +r(767)
+      justify-content: center
+    a
+      margin-right: 15px
+    li:last-child
+      a
+        +r(767)
+          margin-right: 0
+  &__nav
+    display: flex
+    justify-content: space-between
+    +r(767)
+      +center-column
+    &__block
+      +r(767)
+        width: 100%
+      h3
+        margin-bottom: 30px
+        font-size: 14px
+        font-weight: 600
+        line-height: 2.5
+        color: $white
+        +r(767)
+          margin-bottom: 20px
+          display: block
+          width: calc(100% + 30px)
+          border-bottom: 1px solid #424958
+          position: relative
+          margin-bottom: 0
+          left: 50%
+          padding: 10px 10px
+          transform: translate(-50%)
+        i
+          display: none
+          position: absolute
+          right: 20px
+          top: 50%
+          transform: translate(0, -50%)
+          font-weight: 300
+          color: $white
+          +tr
+          +r(767)
+            display: block
+        &.active
+          i
+            transform: translate(0, -50%) rotate(180deg)
+            color: $cerise
+      &:first-child
+        h3
+          +r(767)
+            border-top: 1px solid #424958
+      ul
+        +r(767)
+          display: none
+          width: calc(100% + 30px)
+          border-bottom: 1px solid #424958
+          left: 50%
+          position: relative
+          padding: 20px 10px 10px
+          padding-left: 30px
+          transform: translate(-50%)
+      li
+        margin-bottom: 15px
+        a
+          font-size: 14px
+          color: $pinkish-grey
+          font-weight: 300
+          &:hover
+            text-decoration: underline
+  &__copyright
+    margin-top: 40px
+    p
+      font-size: 12px
+      color: $slate-grey
+      line-height: 1.4
+  &__policy
+    margin-top: 40px
+    +r(767)
+      margin-top: 20px
+    a, span
+      font-size: 12px
+      color: $slate-grey
+      +tr
+    span
+      margin: 0 5px
+    a:hover
+      text-decoration: underline

@@ -1,0 +1,173 @@
+.transform
+  overflow: hidden
+  background-color: $white-four
+  &__content
+    height: 600px
+    background-image: url('../img/home/curve-bg.png')
+    background-size: 1940px 400px
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    +r(1580)
+      background-size: 1560px 400px
+    +r(1330)
+      background-size: 1330px 350px
+    +r(1170)
+      background: none
+      height: auto
+  &__row
+    display: flex
+    justify-content: space-between
+    +r(1330)
+      width: 1250px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    +r(1170)
+      width: 100%
+      flex-wrap: wrap
+      justify-content: space-around
+  &__title
+    padding: 95px 0 115px
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      text-align: center
+      color: $dark
+      +r(767)
+        font-size: 30px
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.41
+      text-align: center
+      color: $dark
+      margin-top: 28px
+  &__block
+    position: relative
+    +r(1170)
+      position: static
+      margin-bottom: 60px
+    &--1
+      top: 135px
+      left: -39px
+      +rmin(1580)
+        left: -173px
+      +r(1330)
+        left: 44px
+        top: 160px
+    &--2
+      left: -12px
+      top: 70px
+      +rmin(1580)
+        left: -80px
+      +r(1330)
+        left: 13px
+        top: 115px
+    &--3
+      left: -16px
+      top: -15px
+      .transform__block__list span:after
+        top: 21px
+      +rmin(1580)
+        left: -30px
+      +r(1330)
+        left: -20px
+        top: 35px
+    &--4
+      top: 125px
+      left: -26px
+      .transform__block__list span:after
+        top: 32px
+      +rmin(1580)
+        left: 40px
+      +r(1330)
+        left: -55px
+        top: 160px
+    &--5
+      top: 90px
+      right: 10px
+      .transform__block__list span:after
+        top: 65px
+      +rmin(1580)
+        left: 109px
+      +r(1330)
+        left: -90px
+        top: 130px
+    &__info
+      width: 225px
+      height: 195px
+      border-radius: 10px
+      box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1)
+      background-color: $white
+      padding: 20px 30px
+      +center-column
+      strong
+        font-size: 12px
+        font-weight: bold
+        color: $pink-red
+        text-transform: uppercase
+        padding: 15px 0
+        display: block
+        text-align: center
+      p
+        font-size: 12px
+        line-height: 1.67
+        text-align: center
+        color: $dark
+      a
+        font-size: 12px
+        font-weight: 600
+        text-align: center
+        color: $dark
+        margin-top: 20px
+        +center
+        i
+          margin-left: 7px
+          font-size: 11
+    &__list
+      position: relative
+      span
+        width: 1px
+        height: 100px
+        background-color: $dark
+        display: block
+        position: relative
+        left: 50%
+        transform: translate(-50%)
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          bottom: -4px
+          left: -2px
+          width: 5px
+          height: 5px
+          background: $black
+          border-radius: 50px
+        &:after
+          content: ''
+          position: absolute
+          width: 15px
+          height: 15px
+          background-color: $pink-red
+          border: 4px solid $white
+          border-radius: 100%
+          top: 50%
+          transform: translate(0, -50%)
+          left: -7px
+          +r(1170)
+            display: none
+      ul
+        list-style-type: disc
+        padding-left: 12px
+        position: relative
+        left: 50%
+        margin-top: 15px
+        +r(767)
+          left: 25%
+      li
+        font-size: 12px
+        font-weight: 300
+        line-height: 2.08
+        color: $brownish-grey-two

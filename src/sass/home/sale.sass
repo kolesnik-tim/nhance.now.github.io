@@ -1,0 +1,99 @@
+.sale
+  padding: 115px 0
+  background: rgb(245, 245, 245)
+  &__offer
+    &__img
+      +center
+      width: 100%
+      padding-bottom: 60px
+    &__text
+      p
+        font-size: 20px
+        font-weight: normal
+        line-height: 1.38
+        text-align: center
+        color: $dark-two
+        padding-bottom: 30px
+        strong
+          font-weight: bold
+      ul
+        +center-column
+        margin-bottom: 20px
+      li
+        font-size: 14px
+        font-weight: 800
+        line-height: 1.43
+        color: #ed135d
+        margin-bottom: 15px
+        +center-y
+        text-transform: uppercase
+        max-width: 390px
+        width: 100%
+        i
+          margin-right: 15px
+      span
+        font-size: 14px
+        font-weight: normal
+        line-height: 1.43
+        text-align: center
+        color: $dark-three
+        display: block
+        b
+          font-weight: bold
+  &__form
+    border-radius: 10px
+    box-shadow: 0 0 24.5px 0 rgba(0, 0, 0, 0.08)
+    background-color: $white
+    padding: 85px
+    margin-top: 30px
+    max-width: 660px
+    width: 100%
+    left: 100%
+    position: relative
+    transform: translate(-100%)
+    h2
+      font-size: 27px
+      font-weight: normal
+      line-height: 1.48
+      color: $dark-two
+      margin-bottom: 40px
+      b
+        font-weight: bold
+      strong
+        font-weight: 800
+        color: #ed135d
+        text-transform: uppercase
+    &__input
+      position: relative
+      input
+        border-bottom: 1px solid $pinkish-grey
+        padding: 7px 0
+        font-size: 14px
+        font-weight: normal
+        line-height: 1
+        color: $dark-three
+        background: none
+        width: 100%
+        margin-bottom: 30px
+        &:focus + label
+          opacity: 0
+        &:valid + label
+          opacity: 0
+      label
+        font-size: 14px
+        font-weight: normal
+        line-height: 1
+        color: $dark-three
+        position: absolute
+        left: 0
+        top: 10px
+        +tr
+        span
+          color: #ed135d
+          font-size: 13px
+          position: relative
+          top: -2px
+          left: 4px
+    input[type="submit"]
+      padding: 10px 26px
+      font-size: 12px
