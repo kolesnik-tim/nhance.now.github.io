@@ -1,9 +1,7 @@
 import '../lib/selectize.min.js';
 // import '../lib/maskedinput.js';
 // import modal from 'jquery-modal';
-
-//select
-// $('select').selectize();
+// import modal from 'jquery-modal';
 
 // //pop-up
 // $('[rel="modal:open"]').on('click', function(event) {
@@ -12,6 +10,7 @@ import '../lib/selectize.min.js';
 //   });
 //   return false;
 // });
+
 
 //footer
 $('.footer__nav__block h3').on('click', function(){
@@ -23,4 +22,19 @@ $('.footer__nav__block h3').on('click', function(){
     $(this).addClass('active');
     $(this).next('ul').slideDown();
   }
+});
+
+
+$(".intro__block a").on("click", function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
+
+//form
+$('.sale__form .button').on('click', function(){
+  setTimeout(function(){
+    window.location.replace("https://demo.nhancenow.com/?page_id=413")
+  }, 400);
 });
