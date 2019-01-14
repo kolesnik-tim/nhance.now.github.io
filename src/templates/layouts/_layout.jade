@@ -17,14 +17,15 @@ html
 
     //LOAD SCRIPTS
     block scripts
-        script(type='text/javascript').
-          var capterra_vkey = 'd2d71e681b2e51f7293aaf5438722180',
-          capterra_vid = '2125646',
-          capterra_prefix = (('https:' == document.location.protocol) ? 'https://ct.capterra.com' : 'http://ct.capterra.com');
-            (function() {
-              var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
-              ct.src = capterra_prefix + '/capterra_tracker.js?vid=' + capterra_vid + '&vkey=' + capterra_vkey;
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
-            })
-          ();
-      script(type="text/javascript" src="js/app.js")
+      script(type='text/javascript').
+        var capterra_vkey = 'd2d71e681b2e51f7293aaf5438722180',
+        capterra_vid = '2125646',
+        capterra_prefix = (('https:' == document.location.protocol) ? 'https://ct.capterra.com' : 'http://ct.capterra.com');
+          (function() {
+            var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
+            ct.src = capterra_prefix + '/capterra_tracker.js?vid=' + capterra_vid + '&vkey=' + capterra_vkey;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
+          })
+        ();
+      script(src="js/wow.js")
+      script(src="js/app.js")

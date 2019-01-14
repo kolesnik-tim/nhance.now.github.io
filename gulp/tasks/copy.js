@@ -33,12 +33,18 @@ gulp.task('copy:img', function () {
         ])
         .pipe(gulp.dest(config.dest.img));
 });
+gulp.task('copy:wow', function () {
+    return gulp
+        .src(config.src.js + '/lib/wow.js')
+        .pipe(gulp.dest(config.dest.js));
+});
 
 gulp.task('copy', [
     'copy:img',
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',
+    'copy:wow',
     'copy:fonts'
 ]);
 gulp.task('copy:watch', function () {

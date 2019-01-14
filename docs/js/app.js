@@ -105,7 +105,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./import/ui */ \"./import/ui.js\");\n\n__webpack_require__(/*! ./import/swiper */ \"./import/swiper.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9pbXBvcnQvdWknO1xuaW1wb3J0ICcuL2ltcG9ydC9zd2lwZXInO1xuLy8gaW1wb3J0IG9iamVjdEZpdEltYWdlcyBmcm9tICdvYmplY3QtZml0LWltYWdlcyc7XG5cblxuXG5cbi8vIG9iamVjdEZpdEltYWdlcygpO1xuXG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\n__webpack_require__(/*! ./import/ui */ \"./import/ui.js\");\n\n__webpack_require__(/*! ./import/swiper */ \"./import/swiper.js\");\n\n//wow\nnew WOW().init({\n  live: true,\n  animateClass: 'animated'\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9pbXBvcnQvdWknO1xuaW1wb3J0ICcuL2ltcG9ydC9zd2lwZXInO1xuXG4vL3dvd1xubmV3IFdPVygpLmluaXQoe1xuICBsaXZlOiB0cnVlLFxuICBhbmltYXRlQ2xhc3M6ICdhbmltYXRlZCdcbn0pO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFGQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ }),
 
