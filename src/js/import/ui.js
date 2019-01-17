@@ -25,7 +25,7 @@ $('.footer__nav__block h3').on('click', function(){
 });
 
 
-$(".intro__block a").on("click", function (event) {
+$(".use .btn, .intro__block a").on("click", function (event) {
   event.preventDefault();
   var id  = $(this).attr('href'),
     top = $(id).offset().top;
