@@ -27,8 +27,8 @@
     box-shadow: 0 0 24.5px 0 rgba(0, 0, 0, 0.08)
     background-color: $white
     padding: 55px
-    +r(767)
-      padding: 25px
+    +r(1040)
+      padding: 25px 25px 35px
     h4
       font-size: 14px
       font-weight: 800
@@ -62,6 +62,39 @@
       i
         margin-right: 15px
         padding-top: 2px
+    &__btn
+      +r(1040)
+        display: flex
+      +r(767)
+        justify-content: center
+      +r(500)
+        flex-direction: column-reverse
+        align-items: center
+      .btn
+        max-width: 230px
+        width: 100%
+        padding: 13px 0
+    .btn-primary-red
+      background: $pink-red
+      border-color: $pink-red
+      margin-right: 10px
+      position: relative
+      +r(500)
+        margin: 20px 0
+      &:hover
+        background: none
+        color: $pink-red
+      span
+        position: absolute
+        bottom: -30px
+        font-size: 12px
+        text-align: center
+        font-weight: normal
+        color: $pink-red
+        text-transform: uppercase
+        b
+          font-weight: bold
+          margin-right: 2px
   &__trust
     padding-bottom: 20px
     &__content
