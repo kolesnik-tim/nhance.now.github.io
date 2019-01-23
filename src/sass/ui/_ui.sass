@@ -58,3 +58,56 @@ textarea
     &:hover
       background: none
       color: #ffffff
+
+
+
+.thank-you
+  height: calc(100vh - 90px)
+  +center-column
+  +r(767)
+    padding: 0 15px
+  +r(850)
+    +rh(460)
+      height: auto
+      padding: 60px !important
+  h1
+    font-size: 30px
+    font-weight: 600
+    line-height: 1.33
+    text-align: center
+    color: $dark-two
+    margin-bottom: 50px
+    +r(767)
+      font-size: 26px
+      br
+        display: none
+    strong
+      font-weight: 800
+      color: $pink-red
+  p
+    max-width: 530px
+    font-size: 18px
+    line-height: 1.67
+    text-align: center
+    color: $brownish-grey-two
+    margin-bottom: 45px
+    +r(767)
+      font-size: 16px
+  .btn
+    font-size: 14px
+    font-weight: bold
+    line-height: 2.14
+    text-align: center
+    color: $white
+    padding: 0px 55px
+    height: 54px
+    border-radius: 27px
+    background-color: $pink-red
+    border-color: $pink-red
+    +r(500)
+      max-width: 100%
+      width: 100%
+      padding: 0
+    &:hover
+      background: none
+      color: $pink-red
