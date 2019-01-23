@@ -17,28 +17,16 @@ html
 
     //LOAD SCRIPTS
     block scripts
-      //Start of Tawk.to Script
-      script.
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-          s1.async=true;
-          s1.src='https://embed.tawk.to/5c22f6e97a79fc1bddf23cc3/default';
-          s1.charset='UTF-8';
-          s1.setAttribute('crossorigin','*');
-          s0.parentNode.insertBefore(s1,s0);
-        })();
-      //End of Tawk.to Script
-      script.
-        var capterra_vkey = 'd2d71e681b2e51f7293aaf5438722180',
-        capterra_vid = '2125646',
-        capterra_prefix = (('https:' == document.location.protocol) ? 'https://ct.capterra.com' : 'http://ct.capterra.com');
+      //- script.
+      //-   var capterra_vkey = 'd2d71e681b2e51f7293aaf5438722180',
+      //-   capterra_vid = '2125646',
+      //-   capterra_prefix = (('https:' == document.location.protocol) ? 'https://ct.capterra.com' : 'http://ct.capterra.com');
 
-        (function() {
-          var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
-          ct.src = capterra_prefix + '/capterra_tracker.js?vid=' + capterra_vid + '&vkey=' + capterra_vkey;
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
-        })();
+      //-   (function() {
+      //-     var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
+      //-     ct.src = capterra_prefix + '/capterra_tracker.js?vid=' + capterra_vid + '&vkey=' + capterra_vkey;
+      //-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
+      //-   })();
 
       script(type='text/javascript').
         var capterra_vkey = 'd2d71e681b2e51f7293aaf5438722180',
@@ -54,4 +42,18 @@ html
       script(type="text/javascript").
         window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"b7373c443f74841bbd510d4e1","lid":"575c25a38c","uniqueMethods":true}) })
       script(src="js/wow.js")
+      //Start of Tawk.to Script
+      script.
+        console.log('tawk');
+        window.$_Tawk = undefined;
+        var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/55ee5ff40fd62512247407c8/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+      //End of Tawk.to Script
       script(src="js/app.js")

@@ -33,11 +33,11 @@ $(".use .btn, .intro__block a").on("click", function (event) {
 });
 
 //form
-$('.sale__form .button').on('click', function(){
-  setTimeout(function(){
-    window.location.replace("https://www.nhancenow.com/offers/thank-you.html")
-  }, 700);
-});
+// $('.sale__form .button').on('click', function(){
+//   setTimeout(function(){
+//     window.location.replace("https://www.nhancenow.com/offers/thank-you.html")
+//   }, 700);
+// });
 // $('div form').submit(function(event) {
 //   event.preventDefault(); // отменяем отправку формы
 
@@ -48,3 +48,10 @@ $('.sale__form .button').on('click', function(){
 //       window.location.href = "http://test.com";
 //   });
 // });
+
+setInterval(function(){
+  if($('#mce-success-response').text() === ''){
+  } else{
+    window.location.replace("https://www.nhancenow.com/offers/thank-you.html")
+  }
+}, 400)
