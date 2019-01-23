@@ -31,27 +31,9 @@ $(".use .btn, .intro__block a").on("click", function (event) {
     top = $(id).offset().top;
   $('body,html').animate({scrollTop: top}, 1500);
 });
-
-//form
-// $('.sale__form .button').on('click', function(){
-//   setTimeout(function(){
-//     window.location.replace("https://www.nhancenow.com/offers/thank-you.html")
-//   }, 700);
-// });
-// $('div form').submit(function(event) {
-//   event.preventDefault(); // отменяем отправку формы
-
-//   // собираем данные
-//   // отправляем
-//   $.ajax({/* ... */}).done(function(result) {
-//       // переход
-//       window.location.href = "http://test.com";
-//   });
-// });
-
 setInterval(function(){
   if($('#mce-success-response').text() === ''){
   } else{
     window.location.replace("https://www.nhancenow.com/offers/thank-you.html")
   }
-}, 400)
+}, 600)
