@@ -66,49 +66,45 @@
         margin-right: 15px
         padding-top: 2px
     &__btn
+      display: flex
       +r(1040)
-        display: flex
-      +r(767)
-        justify-content: center
-      +r(500)
-        flex-direction: column-reverse
-        align-items: center
+        flex-direction: column
       .btn
-        max-width: 230px
-        width: 100%
+        width: 50%
         padding: 13px 0
-    .btn-primary-red
-      background: $pink-red
-      border-color: $pink-red
-      margin-right: 10px
-      position: relative
-      max-width: 180px
-      +r(500)
-        margin: 20px 0
-        max-width: 230px
-      &:hover
-        background: none
-        color: $pink-red
-      span
-        position: absolute
-        bottom: -30px
-        font-size: 12px
-        text-align: center
-        font-weight: normal
-        color: $pink-red
-        text-transform: uppercase
-        display: block
-        b
-          font-weight: bold
-          margin-right: 2px
+        +r(1040)
+          margin-bottom: 15px
+          width: 100%
+      .btn-primary-red
+        background: $pink-red
+        border-color: $pink-red
+        margin-right: 10px
+        position: relative
+        &:hover
+          background: none
+          color: $pink-red
+        span
+          position: absolute
+          bottom: -30px
+          font-size: 12px
+          text-align: center
+          font-weight: normal
+          color: $pink-red
+          text-transform: uppercase
+          display: block
+          b
+            font-weight: bold
+            margin-right: 2px
   &__trust
     padding-bottom: 20px
     &__content
       display: flex
       align-items: center
-      justify-content: center
+      justify-content: space-between
       +r(1040)
         flex-wrap: wrap
+      +r(550)
+        flex-direction: column
     h2
       font-size: 16px
       font-weight: 600
@@ -116,10 +112,12 @@
       color: $dark-two
       margin-bottom: 25px
       text-align: center
+      text-transform: uppercase
     &__logo
       +center
       height: 100%
       margin-bottom: 20px
-      max-width: 140px
-      width: 100%
+      max-height: 50px
       padding: 0 20px
+      +r(767)
+        margin-bottom: 40px
