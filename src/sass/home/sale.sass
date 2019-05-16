@@ -4,8 +4,6 @@
   +r(767)
     padding: 50px 0
   &__offer
-    +r(767)
-      padding-bottom: 50px
     &__img
       +center-column
       width: 100%
@@ -22,6 +20,7 @@
         color: $brownish-grey-two
         padding-top: 15px
     &__text
+      padding-top: 40px
       +r(767)
         +center-column
       p
@@ -90,7 +89,7 @@
       font-weight: normal
       line-height: 1.48
       color: $dark-two
-      margin-bottom: 30px
+      margin-bottom: 15px
       padding-right: 20px
       +r(767)
         font-size: 25px
@@ -135,13 +134,15 @@
       font-size: 12px
       +tr
       margin-top: 30px
+      background: #f2015b
+      border-color: #f2015b
+      &:hover
+        background: $white
+        color: #f2015b
       +r(767)
         margin-top: 0
   &__block-text
-    margin-left: 9%
     margin-top: 50px
-    +r(1200)
-      margin-left: 0
     h4
       font-weight: 600
       color: $dark-two
@@ -153,4 +154,5 @@
       color: $brownish-grey-two
       margin-bottom: 35px
       line-height: 1.64
+        
 

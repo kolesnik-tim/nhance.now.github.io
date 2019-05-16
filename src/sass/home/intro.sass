@@ -72,17 +72,10 @@
       .btn
         width: 50%
         padding: 13px 0
+        position: relative
         +r(1040)
           margin-bottom: 15px
           width: 100%
-      .btn-primary-red
-        background: $pink-red
-        border-color: $pink-red
-        margin-right: 10px
-        position: relative
-        &:hover
-          background: none
-          color: $pink-red
         span
           position: absolute
           bottom: -30px
@@ -95,6 +88,14 @@
           b
             font-weight: bold
             margin-right: 2px
+      .btn-primary-red
+        background: $pink-red
+        border-color: $pink-red
+        margin-left: 10px
+        position: relative
+        &:hover
+          background: none
+          color: $pink-red
   &__trust
     padding-bottom: 20px
     &__content
