@@ -4,6 +4,7 @@
   +r(767)
     padding: 50px 0
   &__offer
+    padding-top: 45px
     &__img
       +center-column
       width: 100%
@@ -11,7 +12,7 @@
       animation-duration: 2s !important
       img
         width: 100%
-        max-width: 315px
+        max-width: 228px
       p
         font-size: 12px
         font-weight: normal
@@ -20,20 +21,19 @@
         color: $brownish-grey-two
         padding-top: 15px
     &__text
-      padding-top: 40px
       +r(767)
         +center-column
       p
         font-size: 20px
         font-weight: normal
         line-height: 1.38
-        text-align: center
         color: $dark-two
-        padding-bottom: 30px
+        padding-bottom: 40px
+        text-transform: uppercase
         strong
           font-weight: bold
       ul
-        +center-column
+        
         margin-bottom: 50px
       li
         font-size: 14px
@@ -82,15 +82,21 @@
     transform: translate(-100%)
     +r(1040)
       padding: 30px
+      padding-bottom: 40px
     +r(767)
       max-width: 100%
+      padding: 15px
+      padding-bottom: 40px
     h2
       font-size: 27px
       font-weight: normal
       line-height: 1.48
       color: $dark-two
-      margin-bottom: 15px
-      padding-right: 20px
+      margin-bottom: 20px
+      strong
+        color: $pink-red
+      b
+        font-weight: bold
       +r(767)
         font-size: 25px
     i
@@ -129,30 +135,51 @@
           position: relative
           top: -2px
           left: 4px
-    input[type="submit"]
-      padding: 10px 26px
-      font-size: 12px
+    button
+      padding: 10px 0
+      width: 100%
+      font-size: 16px
+      font-weight: normal
       +tr
       margin-top: 30px
       background: #f2015b
       border-color: #f2015b
+      position: relative
+      color: $white
+      strong
+        font-weight: bold
+        margin-left: 4px
+      b
+        position: absolute
+        left: 0
+        +center
+        bottom: -40px
+        font-size: 12px
+        font-weight: normal
+        color: rgba(0, 170, 99, 0.8)
+        text-transform: none
+        width: 100%
+        +r(1040)
+          bottom: -30px
+        img
+          height: 16px
+          margin-right: 6px
       &:hover
         background: $white
         color: #f2015b
       +r(767)
         margin-top: 0
   &__block-text
-    margin-top: 50px
+    margin-top: 60px
     h4
       font-weight: 600
       color: $dark-two
       font-size: 12px
       text-transform: uppercase
-      margin-bottom: 40px
+      margin-bottom: 30px
     p
       font-size: 12px
       color: $brownish-grey-two
-      margin-bottom: 35px
       line-height: 1.64
         
 
