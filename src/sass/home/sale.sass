@@ -21,8 +21,6 @@
         color: $brownish-grey-two
         padding-top: 15px
     &__text
-      +r(767)
-        +center-column
       p
         font-size: 20px
         font-weight: normal
@@ -30,22 +28,25 @@
         color: $dark-two
         padding-bottom: 40px
         text-transform: uppercase
+        text-align: center
         strong
           font-weight: bold
       ul
-        
         margin-bottom: 50px
+        max-width: 460px
+        left: 50%
+        transform: translate(-50%)
+        position: relative
       li
         font-size: 14px
         font-weight: 800
         line-height: 1.43
         color: #ed135d
         margin-bottom: 10px
-        display: flex
-        max-width: 460px
         width: 100%
+        text-align: center
         i
-          margin-right: 15px
+          margin-right: 10px
           padding-top: 2px
       a
         margin-left: 20px
